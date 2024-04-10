@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Alien-Pepe/static/css/main.22928c3d.css",
+    "main.js": "/Alien-Pepe/static/js/main.195278a5.js",
+    "static/js/453.c94ed6f9.chunk.js": "/Alien-Pepe/static/js/453.c94ed6f9.chunk.js",
+    "static/media/thirdScreen_mobile.gif": "/Alien-Pepe/static/media/thirdScreen_mobile.69f087117fc265bb7317.gif",
+    "static/media/firstScreen_desktop.gif": "/Alien-Pepe/static/media/firstScreen_desktop.2c49074a0f6125debed7.gif",
+    "static/media/firstScreen_mobile.gif": "/Alien-Pepe/static/media/firstScreen_mobile.a5a72f161fff4dd54c69.gif",
+    "static/media/frog_sitting.gif": "/Alien-Pepe/static/media/frog_sitting.af6a375cc9ae1deeeedd.gif",
+    "static/media/frog_head.gif": "/Alien-Pepe/static/media/frog_head.beea620cd98819d7b5a0.gif",
+    "static/media/wallpaper.jpg": "/Alien-Pepe/static/media/wallpaper.4f5a2eaa9523c200f75a.jpg",
+    "static/media/second_screen.jpg": "/Alien-Pepe/static/media/second_screen.f70c81fa09bd77510e81.jpg",
+    "static/media/desktop.png": "/Alien-Pepe/static/media/desktop.1a0863a696b23461ce0f.png",
+    "static/media/browser.png": "/Alien-Pepe/static/media/browser.c2e81d948e71c78f0468.png",
+    "static/media/title.png": "/Alien-Pepe/static/media/title.7e361a2aa29a3b625e1e.png",
+    "static/media/browser_mobile.png": "/Alien-Pepe/static/media/browser_mobile.c3a70b338faee00d127a.png",
+    "static/media/Q3.png": "/Alien-Pepe/static/media/Q3.1e53992e9d3c521e6d84.png",
+    "static/media/Q2.png": "/Alien-Pepe/static/media/Q2.dcd0e480b534a4ac840e.png",
+    "static/media/Q1.png": "/Alien-Pepe/static/media/Q1.4500d6eb5e3c45ba906d.png",
+    "static/media/Q4.png": "/Alien-Pepe/static/media/Q4.d0cf756cc8985ff450f6.png",
+    "static/media/VECTRO-Bold.otf": "/Alien-Pepe/static/media/VECTRO-Bold.9d60b22890716a9ba857.otf",
+    "index.html": "/Alien-Pepe/index.html",
+    "main.22928c3d.css.map": "/Alien-Pepe/static/css/main.22928c3d.css.map",
+    "main.195278a5.js.map": "/Alien-Pepe/static/js/main.195278a5.js.map",
+    "453.c94ed6f9.chunk.js.map": "/Alien-Pepe/static/js/453.c94ed6f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22928c3d.css",
+    "static/js/main.195278a5.js"
+  ]
+}
