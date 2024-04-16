@@ -1,0 +1,35 @@
+@import "../../assets/style/app";
+
+.app {
+  position: relative;
+
+  .address {
+    @include container;
+    background: #000;
+
+    .address_inner {
+      @include inner;
+      padding: 8px 0;
+      //display: flex;
+      //align-items: center;
+
+
+      p {
+        @include Wallpoet;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 108%;
+        color: #fff;
+        word-break: break-all;
+
+        @include desktop {
+          font-size: 36px;
+        }
+      }
+
+    }
+  }
+
+
+}
+

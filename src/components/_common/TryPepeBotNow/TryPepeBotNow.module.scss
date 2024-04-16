@@ -1,0 +1,33 @@
+@import "../../../assets/style/app";
+
+.tryPepeBotNow {
+  background: #000;
+  height: 47px;
+
+  @include desktop {
+    height: 72px;
+  }
+
+  .item {
+    height: 47px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+    @include desktop {
+      height: 72px;
+      margin-left: 48px;
+    }
+
+    span {
+      @include Wallpoet;
+      white-space: nowrap;
+      font-size: 30px;
+
+      @include desktop {
+        font-size: 48px;
+
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@import "../../assets/style/app";
+
+.thirdScreen {
+  @include container;
+  height: 680px;
+  background-image: url(../../assets/gif/thirdScreen_mobile.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include desktop {
+    padding-top: 88px;
+    height: 912px;
+    background-image: url(../../assets/gif/thirdScreen_mobile.gif);
+  }
+
+  .inner {
+    @include inner;
+    height: 100%;
+
+    .mobileContent {
+      @include onlyMobile(flex);
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .item {
+        display: flex;
+
+        &:not(:first-child) {
+          margin-top: 16px;
+        }
+
+        .q {
+          display: block;
+          width: 60px;
+          height: auto;
+          flex-shrink: 0;
+          align-self: flex-start;
+        }
+
+        .texts {
+          margin-left: 16px;
+
+          p {
+            @include TitanOne;
+            @include text_shadow_black6;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 108%;
+
+            &:not(:first-child) {
+              margin-top: 16px;
+            }
+          }
+
+
+        }
+
+      }
+
+    }
+
+    .desktopContent {
+      @include onlyDesktop();
+      width: 100%;
+    }
+
+  }
+
+
+}

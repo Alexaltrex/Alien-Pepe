@@ -1,0 +1,77 @@
+@import "../../assets/style/app";
+
+.forthScreen {
+  overflow: hidden;
+  background-image: url(../../assets/jpeg/wallpaper.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  //height: 494px;
+  padding-top: 17px;
+
+  @include desktop {
+    padding-top: 26px;
+    padding-bottom: 177px;
+    //height: 814px;
+  }
+
+  .inner {
+    @include inner;
+    //background: red;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 127px;
+
+    @include desktop {
+      padding-bottom: 0;
+    }
+
+    .left {
+
+      .paper {
+        display: block;
+        width: 119px;
+        height: auto;
+
+        @include desktop {
+          width: 205px;
+        }
+      }
+
+      .pepe {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        height: 214px;
+        width: auto;
+        margin-top: 64px;
+        transform: translateX(-120px);
+
+        @include desktop {
+          height: 572px;
+          margin-top: 0;
+          transform: translateX(-200px);
+        }
+      }
+    }
+
+    .browserMobile {
+      @include onlyMobile();
+      width: 100%;
+    }
+
+    .browserDesktop {
+      @include onlyDesktop();
+      flex-shrink: 0;
+      align-self: flex-start;
+      width: 840px;
+      height: auto;
+      margin-top: 127px;
+    }
+
+
+  }
+
+}

@@ -1,0 +1,336 @@
+@import "../../assets/style/app";
+
+.firstScreen {
+  @include container;
+  //height: 573px;
+  background-image: url(../../assets/gif/firstScreen_mobile.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 24px;
+
+  @include desktop {
+    padding-top: 10px;
+    padding-bottom: 44px;
+    height: 810px;
+    background-image: url(../../assets/gif/firstScreen_desktop.gif);
+  }
+
+  .inner {
+    @include inner;
+
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+
+    .title {
+      margin-left: auto;
+      margin-right: auto;
+      width: 355px;
+      max-width: 100%;
+
+      @include desktop {
+        margin-left: 0;
+        width: 703px;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+
+        @include desktop {
+          width: 703px;
+        }
+      }
+    }
+
+    .description {
+      @include onlyDesktop() {
+        @include TitanOne;
+        @include text_shadow_black10;
+        font-weight: 400;
+        font-size: 31px;
+        line-height: 108%;
+        color: #9dffca;
+        width: 567px;
+        padding-left: 40px;
+      }
+    }
+
+    .card {
+      margin-top: 24px;
+      border-radius: 20px;
+      backdrop-filter: blur(9px);
+      border: 1px solid #00FF29;
+      box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.16), 0 15px 67px 0 #000;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include desktop {
+        padding: 12px 27px 21px;
+        margin-left: 40px;
+        margin-top: 36px;
+      }
+
+      .cardTitle {
+        @include VECTRO;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 123%;
+        text-align: center;
+        color: #00ff57;
+
+
+        @include desktop {
+          font-size: 40px;
+        }
+      }
+
+      .timerWrapper {
+        border-radius: 9px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 5px 0;
+
+        width: 200px;
+        text-align: center;
+
+        @include desktop {
+          width: 380px;
+        }
+
+        .time {
+
+          span {
+            @include VECTRO;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 123%;
+            text-align: center;
+            color: #fff;
+
+            @include desktop {
+              font-size: 60px;
+            }
+          }
+        }
+
+        .labels {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 10px;
+
+          @include desktop {
+            padding: 0 20px;
+          }
+
+          p {
+            @include VECTRO;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 123%;
+            text-align: center;
+            color: #fff;
+
+            @include desktop {
+              font-size: 16px;
+            }
+          }
+        }
+
+
+      }
+
+      .sol {
+        margin-top: 12px;
+        @include TitanOne;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 100%;
+        color: #00ffc2;
+
+        @include desktop {
+          font-size: 14px;
+        }
+      }
+
+      .scale {
+        align-self: stretch;
+        margin-top: 12px;
+        height: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 999px;
+
+        .scaleInner {
+          width: 65%;
+          height: 100%;
+          border-radius: 999px;
+          background: #f9ce02;
+        }
+
+      }
+
+      .colorTexts {
+        align-self: stretch;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+          @include TitanOne;
+          @include text_shadow_black2;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 100%;
+
+          @include desktop {
+            font-size: 14px;
+          }
+
+          &:nth-child(1) {
+            color: #0f2;
+          }
+
+          &:nth-child(2) {
+            color: #f00;
+          }
+
+          &:nth-child(3) {
+            color: #f90;
+          }
+        }
+
+      }
+
+      .divider {
+        align-self: stretch;
+        margin-top: 15px;
+        height: 3px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+
+      .inputs {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+
+        .inputWrapper {
+          border-radius: 9px;
+          backdrop-filter: blur(53.29603576660156px);
+          box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.16), 0 15px 67px 0 #000;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          background: rgba(0, 0, 0, 0.5);
+          padding: 4px 8px;
+          display: flex;
+          align-items: center;
+          //width: 80px;
+
+          @include desktop {
+            padding: 6px 12px;
+            width: 160px;
+          }
+
+          &:not(:first-child) {
+            margin-left: 6px;
+
+            @include desktop {
+              margin-left: 24px;
+            }
+          }
+
+          img {
+            display: block;
+            width: 20px;
+            height: 20px;
+
+            @include desktop {
+              width: 26px;
+              height: 26px;
+            }
+          }
+
+          input {
+            background: none;
+            border: none;
+            outline: none;
+            margin-left: 20px;
+            @include VECTRO;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 123%;
+            color: #fff;
+            min-width: 0;
+            width: 100%;
+
+            @include desktop {
+              margin-left: 25px;
+              font-size: 30px;
+
+            }
+
+
+          }
+        }
+
+      }
+
+      .connectBtn {
+        @include button;
+        @include centerRow;
+        margin-top: 13px;
+        height: 36px;
+        border-radius: 9px;
+        backdrop-filter: blur(53.29603576660156px);
+        box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.16), 0 15px 67px 0 #000;
+        background: #00d549;
+        width: 100%;
+
+        @include desktop {
+          margin-top: 24px;
+          height: 51px;
+        }
+
+        span {
+          @include VECTRO;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 123%;
+          text-align: center;
+          color: #fff;
+
+          @include desktop {
+            font-size: 30px;
+          }
+        }
+
+      }
+
+      .end {
+        margin-top: 18px;
+        @include VECTRO;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 123%;
+        text-align: center;
+        color: #fff;
+
+        @include desktop {
+          margin-top: 24px;
+          font-size: 14px;
+        }
+      }
+
+
+    }
+
+  }
+}
