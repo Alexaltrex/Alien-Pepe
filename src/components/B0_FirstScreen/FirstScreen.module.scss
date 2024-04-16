@@ -103,7 +103,7 @@
         text-align: center;
 
         @include desktop {
-          width: 380px;
+          width: 390px;
         }
 
         .time {
@@ -124,7 +124,7 @@
 
         .labels {
           display: flex;
-          justify-content: space-between;
+          //justify-content: space-between;
           padding: 0 10px;
 
           @include desktop {
@@ -141,6 +141,30 @@
 
             @include desktop {
               font-size: 16px;
+            }
+
+            &:nth-child(2) {
+              margin-left: 26px;
+
+              @include desktop {
+                margin-left: 73px;
+              }
+            }
+
+            &:nth-child(3) {
+              margin-left: 21px;
+
+              @include desktop {
+                margin-left: 63px;
+              }
+            }
+
+            &:nth-child(4) {
+              margin-left: 10px;
+
+              @include desktop {
+                margin-left: 50px;
+              }
             }
           }
         }
