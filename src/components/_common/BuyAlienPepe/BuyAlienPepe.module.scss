@@ -1,0 +1,32 @@
+@import "../../../assets/style/app";
+
+.buyAlienPepe {
+    background: #000;
+    height: 47px;
+
+    @include desktop {
+      height: 72px;
+    }
+
+    .item {
+      height: 47px;
+      display: flex;
+      align-items: center;
+
+      @include desktop {
+        height: 72px;
+      }
+
+      p {
+        @include Wallpoet;
+        white-space: nowrap;
+        font-size: 30px;
+        margin-left: 30px;
+
+        @include desktop {
+          font-size: 48px;
+          margin-left: 48px;
+        }
+      }
+    }
+}
